@@ -1,0 +1,7 @@
+component nesting:
+
+use of a component within another component
+
+AppRegistry:
+
+only used by the root component - the app component that displays things on screen. 

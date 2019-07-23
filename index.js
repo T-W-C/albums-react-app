@@ -2,13 +2,8 @@
  * @format
  */
 
-/** OLD CODE
-    import {AppRegistry} from 'react-native';
-    import App from './App';
-    import {name as appName} from './app.json';
 
-    AppRegistry.registerComponent(appName, () => App);
-*/
+// ONLY THE ROOT COMPONENT USES APPREGISTRY
 
 
 // import a library to hlep create a component
@@ -19,11 +14,11 @@ import React from 'react';
 // provides default core components
 
 
-// import ReactNative from 'react-native';
-
 // import destructuring: - Text 
 import { Text, AppRegistry } from 'react-native';
 
+// for custom components the path of the component must be specified
+import Header from '.src/components/header';
 
 // COMPONENT:
 // components are objects that can be placed on screen on the device
@@ -34,8 +29,8 @@ const App = () => {
     // nesting tags is possible
     // JSX is used to display things to the device
     return (
-        // Text is a react component that is need of being imported
-        <Text>Some Text</Text>
+        // component nested - using JSX for the imported statement
+        <Header />
     );
 };
 
