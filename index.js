@@ -18,7 +18,7 @@ import React from 'react';
 import { Text, AppRegistry } from 'react-native';
 
 // for custom components the path of the component must be specified
-import Header from '.src/components/header';
+import Header from './src/components/header';
 
 // COMPONENT:
 // components are objects that can be placed on screen on the device
