@@ -15,11 +15,11 @@ import React from 'react';
 
 
 // import destructuring: - Text 
-import { Text, AppRegistry, YellowBox } from 'react-native';
+import { Text, AppRegistry, YellowBox, View } from 'react-native';
 
 // for custom components the path of the component must be specified
-import Header from './src/components/header';
-
+import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 YellowBox.ignoreWarnings(['Remote debugger']);
 
@@ -31,9 +31,12 @@ const App = () => {
     // uses tags
     // nesting tags is possible
     // JSX is used to display things to the device
-    return (
+    return ( // only one component is to be returned - one component cannot be returned after the other. Thus the tags have to be wrapped
         // component nested - using JSX for the imported statement
-        <Header headerText='Album Homepage' />
+        <View>
+            <Header headerText='Album Homepage' />
+            <AlbumList />
+        </View>
     );
 };
 

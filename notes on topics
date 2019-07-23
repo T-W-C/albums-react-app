@@ -1,7 +1,33 @@
 component nesting:
-
 use of a component within another component
 
 AppRegistry:
+only used by the root component - the app component that displays things on screen.
 
-only used by the root component - the app component that displays things on screen. 
+
+Styling in react-native:
+all the styling is done within the component file itself
+it is defined within a const object styles
+In the styles object - there are lots of properties built into react that one can implement
+
+View component tag:
+used to position the components through wrapping them
+
+Flexbox:
+this is how the elements are structures and positioned in a container
+
+Types of component:
+
+functional components:
+these are used for presenting static data,
+such as a header displaying text
+
+class components:
+these are used for dynamic sources of data
+handles any data that might change (fetching data, user events etc)
+structure:
+class Header extends Component {
+    render() {
+        return <Text> Hi </Text>
+    }
+}
