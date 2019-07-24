@@ -31,3 +31,8 @@ class Header extends Component {
         return <Text> Hi </Text>
     }
 }
+
+
+class components - lifecycle methods:
+these components are aware of their states - like when they get rendered to the screen
+lifecycle methods are prebuilt methods which are called when the events are triggered
